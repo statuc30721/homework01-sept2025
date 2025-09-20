@@ -161,7 +161,7 @@ Deploy a basic EC2 instance in an AWS region.
 
     [NOTE] If you still have other EC2 instances running you will see your new EC2 instance running. Since it is running in the same VPC, your Security Group settings will control access to the EC2 instance.
 
-    Verify changes to the web service running on the new EC2 instance.
+    Verify changes to the web service running on the EC2 instance which has your modified index.html file.
 
     ## BAMC 1.2
     
