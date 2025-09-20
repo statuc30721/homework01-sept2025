@@ -14,15 +14,20 @@ Deploy a basic EC2 instance in an AWS region.
 
 - Under Network & Security > Security Groups
     - Select Create Security Group
+
     - Input a Name and Description for the SG
+
     - Verify the VPC is the default that the SG
+
     - In Inbound Rules add a rule of 
         - Type: HTTP
         - Protocol: TCP
         - Port Range: 80
         - Source: anywhere-IPV4 # Note this not a best practice. 
         - Description 
+
     - Outbound Rules will *NOT* be modified. Leave this setting as-is.
+    
     - Tags: Add tags to support being able to find or have an idea what or when this was created. 
 
     ![SecurityGroup](/graphics/aws-security-group-01.png)
@@ -41,10 +46,15 @@ Deploy a basic EC2 instance in an AWS region.
 6. EC2 Deployment
 
     - In the EC2 dashboard menu, select Instances
+
     - Select Launch Instances
+
     - Under name and Tags input a name. For example My-HTTP-Server
+
     - Select Amazon Linux Machine Image (AMI) with AWS logo. You have other types but for this project we will stay with the basic Linux AMI.
     - Note the username for the image. The default user is ec2-user.
-    - In Instance Type: select t3.micro. It may be a different Instance Type depending on when you are using this guide. It also may vary depending on what AWS region you are deploying an EC2 instance (e.g. Tokyo, Germany)
 
-    
+    - In Instance Type: select t3.micro. It may be a different Instance Type depending on when you are using this guide. It also may vary depending on what AWS region you are deploying an EC2 instance (e.g. Tokyo, Germany).
+
+    - 
+
