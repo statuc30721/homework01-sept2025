@@ -99,6 +99,15 @@ Deploy a basic EC2 instance in an AWS region.
 
         ![Launch successful](/graphics/aws-ec2-launch-successful.png)
 
+    - Select the URL for the EC2 instance in the GREEN success popup in the web browser.
+
+    You will see a lot of information about your EC2 instance including its Public and Private IPv4 addresses. Our objective is to make sure we can access the HTTP service application on the EC2 instance.
+
+    - Select the Public DNS address which should be visible in the Instance summary. This IP address can change if you terminate and/or relaunch the EC2 instance.
+
+    [NOTE] Recall that we are only using the HTTP protocol. So to confirm we have a working service we need to set the browser to use HTTP and *not* HTTPS.
+
+    ![Webpage-example-deployment](/graphics/example-webpage.png)
 
 
 
