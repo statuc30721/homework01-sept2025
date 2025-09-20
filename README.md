@@ -142,7 +142,9 @@ Deploy a basic EC2 instance in an AWS region.
 
     In the Advanced section select user data perform the following steps:
     - Clear the current content in the user data field.
-    - Copy the content from the modified ec2script file under the BAMC-1.1 folder named ec2script-1.1.txt.
+    - Copy the content from the modified ec2script file in BAMC-1.1/ec2script-1.1.txt.
+    - Clear the User data section and input the content from the file BAMC-1.2/ec2script-1.2.txt.
+        - Open the file and select "Copy Raw File" using the GitHub interface.
     - Save template.
 
     If everything worked then you should see a GREEN success message that you now have a template.
@@ -172,6 +174,8 @@ Deploy a basic EC2 instance in an AWS region.
     - Select Actions, Launch Instance from template.
     - Open the Advanced details section at the bottom of the web page.
     - Clear the User data section and input the content from the file BAMC-1.2/ec2script-1.2.txt.
+        - Open the file and select "Copy Raw File" using the GitHub interface.
 
-    - 
+        You should see your modified configuration for the index.html file.
+    - Under Summary, select Launch Instance
 
