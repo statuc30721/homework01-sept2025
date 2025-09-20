@@ -136,30 +136,32 @@ Deploy a basic EC2 instance in an AWS region.
 
     - Template Tags: Add creation date to help keep track of when the template was created.
 
+
     ![AWS-EC2-Create-Launch-Template](/graphics/aws-ec2-create-launch-template.png)
 
-    3. In the Advanced section select user data perform the following steps:
-        - Clear the current content in the user data field.
-        - Copy the content from the modified ec2script file under the BAMC-1.1 folder named ec2script-1.1.txt.
-        - Save template.
 
-        If everything worked then you should see a GREEN success message that you now have a template.
+    In the Advanced section select user data perform the following steps:
+    - Clear the current content in the user data field.
+    - Copy the content from the modified ec2script file under the BAMC-1.1 folder named ec2script-1.1.txt.
+    - Save template.
+
+    If everything worked then you should see a GREEN success message that you now have a template.
 
     
 
-    4. Review created template.
+    Review created template.
         - Select Launch templates from the left menu Instances > Launch Templates        
         - You should see your newly created template.
         - Select the advanced tab and you should see your modified e2 script contents.
 
-    5. Launch a new EC2 instance from the template.
+    Launch a new EC2 instance from the template.
         - Select actions > Launch instance from template.
         - Select under the Summary tab, Launch Instance
         - You should see a GREEN successful EC2 launch.
 
     [NOTE] If you still have other EC2 instances running you will see your new EC2 instance running. Since it is running in the same VPC, your Security Group settings will control access to the EC2 instance.
 
-    6. Verify changes to the web service running on the new EC2 instance.
+    Verify changes to the web service running on the new EC2 instance.
 
     ## BAMC 1.2
     
