@@ -109,11 +109,33 @@ Deploy a basic EC2 instance in an AWS region.
 
     ![Webpage-example-deployment](/graphics/example-webpage.png)
 
-[NOTE] You may notice that you can't access the EC2 instance via the AWS EC2 Instance connect or via Secure Shell even though you added a SSH key to the EC2 instance.
+    [NOTE] You may notice that you can't access the EC2 instance via the AWS EC2 Instance connect or via Secure Shell even though you added a SSH key to the EC2 instance.
 
-To be able to access the EC2 instance via Secure Shell you will need to modify the existing Security Group and add allow SSH inbound. 
+    To be able to access the EC2 instance via Secure Shell you will need to modify the existing Security Group and add allow SSH inbound. 
 
-[Alternatives]
-    1. One alternative is to add a second security group with a SSH rule.
-    2. Template the running EC2 instance, modify the userdata input from the ec2script.txt with different information. For example have a picture hosted in a AWS S3 bucket or from a public or private accessible website (e.g. Github).
+    [Alternatives]
+        1. One alternative is to add a second security group with a SSH rule.
+
+        2. Template the running EC2 instance, modify the userdata input from the ec2script.txt with different information. For example have a picture hosted in a AWS S3 bucket or from a public or private accessible website (e.g. Github).
+
+    For this project we will template the EC2 instance, load a revised ec2script and launch a new EC2 instance from the template.
+
+    -BAMC 1.1
+     
+    1. In the EC2 console select the running EC2 instance named My-HTTP-Server.
+    2. Select under Actions, Image and templates, Create template from instance.
+        - Input a name for the template. In this example we will name the template HW01-BAMC-Template.
+
+        - Launch template name: HW01-BAMC-Template
+
+        - Template version description: HW01-BAMC-Template
+
+        - Template Tags: Add creation date to help keep track of when the template was created.
+    3. In the Advanced section select user data and input the modified ec2script file under the BAMC-1.1 folder named ec2script-1.1.txt.
+
+     
+
+
+
+
 
