@@ -130,9 +130,9 @@ Deploy a basic EC2 instance in an AWS region.
 
     - Input a name for the template. In this example we will name the template HW01-BAMC-Template.
 
-    - Launch template name: HW01-BAMC-Template
+    - Launch template name: HW01-BAMC-Template.
 
-    - Template version description: HW01-BAMC-Template
+    - Template version description: HW01-BAMC-Template.
 
     - Template Tags: Add creation date to help keep track of when the template was created.
 
@@ -150,13 +150,13 @@ Deploy a basic EC2 instance in an AWS region.
     
 
     Review the created template.
-    - Select Launch templates from the left menu Instances > Launch Templates        
+    - Select Launch templates from the left menu Instances > Launch Templates.       
     - You should see your newly created template.
     - Select the advanced tab and you should see your modified e2 script contents.
 
     Launch a new EC2 instance from the template.
     - Select actions > Launch instance from template.
-    - Select under the Summary tab, Launch Instance
+    - Select under the Summary tab, Launch Instance.
     - You should see a GREEN successful EC2 launch.
 
     [NOTE] If you still have other EC2 instances running you will see your new EC2 instance running. Since it is running in the same VPC, your Security Group settings will control access to the EC2 instance.
@@ -165,4 +165,13 @@ Deploy a basic EC2 instance in an AWS region.
 
     ## BAMC 1.2
     
-    For this version we will login to the run
+    For this version we will use the same procedures as above except we will modify the template.
+
+    - Select EC2 > Launch Templates.
+    - Select our existing Launch Template (e.g. HW01-BAMC-Template).
+    - Select Actions, Launch Instance from template.
+    - Open the Advanced details section at the bottom of the web page.
+    - Clear the User data section and input the content from the file BAMC-1.2/ec2script-1.2.txt.
+
+    - 
+
