@@ -113,8 +113,8 @@ Deploy a basic EC2 instance in an AWS region.
 
     To be able to access the EC2 instance via Secure Shell you will need to modify the existing Security Group and add allow SSH inbound. 
 
-    [Alternatives]
-    
+    [ALTERNATIVES]
+
      One alternative is to add a second security group with a SSH rule.
      
      Template the running EC2 instance, modify the userdata input from the ec2script.txt with different information. For example have a picture hosted in a AWS S3 bucket or from a public or private accessible website (e.g. Github).
@@ -125,8 +125,8 @@ Deploy a basic EC2 instance in an AWS region.
 
    1. In the EC2 console select the running EC2 instance named My-HTTP-Server.    
    2. Select under Actions, Image and templates, Create template from instance.
-
-    ![template-menu](/graphics/aws-ec2-create-template-menu-screenshot.png)
+   
+   ![template-menu](/graphics/aws-ec2-create-template-menu-screenshot.png)
 
     Input a name for the template. In this example we will name the template HW01-BAMC-Template.
 
