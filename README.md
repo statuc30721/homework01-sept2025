@@ -187,4 +187,60 @@ Deploy a basic EC2 instance in an AWS region.
 
     ![BMC-1.2](/graphics/aws-ec2-bmc-1.2.png)
 
-    You can and *should* use your own pictures to customize your test web page!
+    [NOTE] You can and *should* use your own pictures to customize your test web page!
+
+# Teardown Instructions
+
+In any deployment on AWS we want to make sure we remove all objects we created. This is a good practice especially for proof of concept or demonstration projects like this one.
+
+- Access the EC2 console and terminate any running instances.
+
+- Select each running EC2 instance and select Instance State > Terminate Instances
+
+![AWS Terminate EC2 Example](/graphics/aws-ec2-terminate-instance.png)
+
+- Select the refresh icon to make sure all instances are terminated.
+
+![AWS EC2 terminated](/graphics/aws-ec2-terminated-instances.png)
+
+- Remove the Security Group we created for this demonstration.
+
+- Network & Security > Security Groups
+ - Select the security group we named SG-01 or whatever name you chose to use.
+
+ [WARNING] DO NOT TOUCH the *default* security group of the VPC!!!
+
+ ![AWS VPC Custom SG](/graphics/aws-vpc-custom-security-group.png)
+
+- Refresh the window and you should see your original default VPC security group.
+
+- Delete Launch Template
+ - Instances > Launch Templates
+ - Select the Launch Template ID that was created in previous steps. In this example that is HW01-BAMC-template.
+
+ - Select Actions > Delete Template
+
+ ![Delete-Template](/graphics/aws-ec2-template-delete.png)
+
+ - In the Delete Launch Template menu you should read the note to understand that this is a irreversible action.
+
+ - Input the confirmation word, and select Delete.
+
+ ![delete template confirmation](/graphics/aws-ec2-template-delete-confirmation.png)
+
+ If the deletion succeeded you should see a GREEN popup that states that the Deleet Launch Template Request succeeded. 
+
+Return to your AWS EC2 Dashboard and refresh the web page.
+
+In the Resources you should not see any Running Instances. You may see a number in Instances but those should match the instances you terminated.
+
+As pictured below in the EC2 dashboard I have a quantity of 2 instances. Selecting the Instances shows that those match the last 2 instances that were terminated. You will notice in the screenshot that the dashboard shows no Instances in a *running* state.
+
+![EC2 Dashboard](/graphics/ec2-dashboard-instance.png)
+
+
+![EC2 Terminated Instances](/graphics/aws-ec2-terminated-instances.png)
+
+
+
+
