@@ -32,7 +32,7 @@ echo "
 <h1>Samurai Katana</h1>
 
 <br>
-I found my wife on a party yacht in Bangkok! Her name is Jasmine! <br>
+<h1>I found my wife on a party yacht in Bangkok! Her name is Jasmine!</h1> <br>
 
 <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/3/2023/04/12225638/thaistyle3.jpg">
 <br>
