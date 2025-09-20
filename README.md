@@ -128,13 +128,13 @@ Deploy a basic EC2 instance in an AWS region.
    
    ![template-menu](/graphics/aws-ec2-create-template-menu-screenshot.png)
 
-    Input a name for the template. In this example we will name the template HW01-BAMC-Template.
+    - Input a name for the template. In this example we will name the template HW01-BAMC-Template.
 
-    Launch template name: HW01-BAMC-Template
+    - Launch template name: HW01-BAMC-Template
 
-    Template version description: HW01-BAMC-Template
+    - Template version description: HW01-BAMC-Template
 
-    Template Tags: Add creation date to help keep track of when the template was created.
+    - Template Tags: Add creation date to help keep track of when the template was created.
 
     ![AWS-EC2-Create-Launch-Template](/graphics/aws-ec2-create-launch-template.png)
 
