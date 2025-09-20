@@ -27,7 +27,7 @@ Deploy a basic EC2 instance in an AWS region.
         - Description 
 
     - Outbound Rules will *NOT* be modified. Leave this setting as-is.
-    
+
     - Tags: Add tags to support being able to find or have an idea what or when this was created. 
 
     ![SecurityGroup](/graphics/aws-security-group-01.png)
@@ -56,5 +56,49 @@ Deploy a basic EC2 instance in an AWS region.
 
     - In Instance Type: select t3.micro. It may be a different Instance Type depending on when you are using this guide. It also may vary depending on what AWS region you are deploying an EC2 instance (e.g. Tokyo, Germany).
 
-    - 
+    - Create a new key pair. 
+        - Name the SSH key pair the name of your EC2 instance.
+            - Key pair name: My-HTTP-Server
+            - Key pair type: RSA
+            - Private key file format: .pem
+        - Select Create key pair button.
+
+        ![Create Key pair](/graphics/aws-ec2-create-key-pair.png)
+
+
+        [NOTE] A PEM file with the name of your key will be downloaded to your management system that you are accessing the AWS EC2 dashboard. Please be sure to store the file in a safe place.
+
+        - Set permission on the downloaded .pem file to 0400. This will set the owner to have Read permission, Groups and users will have no Read, Write or Execute permission to the file. For this type of file you only need Read permission.
+
+    - Network Settings.
+        - Leave Network, Subnet and auto-assign public IP in their default configuration.
+
+        - In Firewall (security groups), select existing security group
+            - Select the security group you created earlier. In this example we named it SG-01.
+
+        ![network settings](/graphics/aws-ec2-network-settings.png)
+
+    - Configure Storage: Leave this as is.
+
+        ![configure storage default](/graphics/aws-ec2-configure-storage.png)
+
+    - Advanced details.
+        [CAUTION] There are a lot of settings here that can be modified. For this project we will *ONLY* leverage the user data feature.
+
+        - In the user data field you will see the option to either choose a file or paste content into the web browser interface. In our project we will just paste the content from the ec2script.txt file into the space.
+
+        - Open the ec2script.txt file and copy and paste the contents into the user data field.
+
+        ![user-data-field](/graphics/aws-ec2-user-data-with-content.png)
+    
+    - Under the Summary field select Launch Instance. 
+
+        ![EC2 summary](/graphics/aws-ec2-summary.png)
+
+        If all of your settings were correct then you should see a green banner stating that the launch was successful.
+
+        ![Launch successful](/graphics/aws-ec2-launch-successful.png)
+
+
+
 
