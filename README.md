@@ -109,5 +109,11 @@ Deploy a basic EC2 instance in an AWS region.
 
     ![Webpage-example-deployment](/graphics/example-webpage.png)
 
+[NOTE] You may notice that you can't access the EC2 instance via the AWS EC2 Instance connect or via Secure Shell even though you added a SSH key to the EC2 instance.
 
+To be able to access the EC2 instance via Secure Shell you will need to modify the existing Security Group and add allow SSH inbound. 
+
+[Alternatives]
+    1. One alternative is to add a second security group with a SSH rule.
+    2. Template the running EC2 instance, modify the userdata input from the ec2script.txt with different information. For example have a picture hosted in a AWS S3 bucket or from a public or private accessible website (e.g. Github).
 
