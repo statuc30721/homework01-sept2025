@@ -165,6 +165,8 @@ Deploy a basic EC2 instance in an AWS region.
 
     Verify changes to the web service running on the EC2 instance which has your modified index.html file.
 
+    ![BMC1.1](/graphics/aws-ec2-bmc-1.1.png)
+
     ## BAMC 1.2
     
     For this version we will use the same procedures as above except we will modify the template.
@@ -179,3 +181,10 @@ Deploy a basic EC2 instance in an AWS region.
         You should see your modified configuration for the index.html file.
     - Under Summary, select Launch Instance
 
+    - Select the instance URL in the GREEN Successfully initiated launch of instance popup.
+
+    - Verify your modification by selecting the Public DNS record and opening the URL in a new browser tab or window.
+
+    ![BMC-1.2](/graphics/aws-ec2-bmc-1.2.png)
+
+    You can and *should* use your own pictures to customize your test web page!
