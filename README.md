@@ -149,15 +149,15 @@ Deploy a basic EC2 instance in an AWS region.
 
     
 
-    Review created template.
-        - Select Launch templates from the left menu Instances > Launch Templates        
-        - You should see your newly created template.
-        - Select the advanced tab and you should see your modified e2 script contents.
+    Review the created template.
+    - Select Launch templates from the left menu Instances > Launch Templates        
+    - You should see your newly created template.
+    - Select the advanced tab and you should see your modified e2 script contents.
 
     Launch a new EC2 instance from the template.
-        - Select actions > Launch instance from template.
-        - Select under the Summary tab, Launch Instance
-        - You should see a GREEN successful EC2 launch.
+    - Select actions > Launch instance from template.
+    - Select under the Summary tab, Launch Instance
+    - You should see a GREEN successful EC2 launch.
 
     [NOTE] If you still have other EC2 instances running you will see your new EC2 instance running. Since it is running in the same VPC, your Security Group settings will control access to the EC2 instance.
 
