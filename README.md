@@ -120,7 +120,7 @@ Deploy a basic EC2 instance in an AWS region.
 
     For this project we will template the EC2 instance, load a revised ec2script and launch a new EC2 instance from the template.
 
-    # BAMC 1.1
+    ## BAMC 1.1
      
     1. In the EC2 console select the running EC2 instance named My-HTTP-Server.
     2. Select under Actions, Image and templates, Create template from instance.
@@ -161,6 +161,6 @@ Deploy a basic EC2 instance in an AWS region.
 
     6. Verify changes to the web service running on the new EC2 instance.
 
-    # BAMC 1.2
+    ## BAMC 1.2
     
     For this version we will login to the run
