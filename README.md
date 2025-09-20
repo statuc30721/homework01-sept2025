@@ -240,7 +240,3 @@ As pictured below in the EC2 dashboard I have a quantity of 2 instances. Selecti
 
 
 ![EC2 Terminated Instances](/graphics/aws-ec2-terminated-instances.png)
-
-
-
-
